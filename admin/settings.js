@@ -1,13 +1,15 @@
 /*
 
-startup on page load ... render and populate as needed
 
 @author: Lewis A. Sellers <lasellers@gmail.com>
 @date: 6/2015
 */
 
+/*
 
+startup on page load ... render and populate as needed
 
+*/
 jQuery( document ).ready(function( $ ) {
 
 	if($( "#loremblogum_settings" ).length>0) 
@@ -16,13 +18,14 @@ jQuery( document ).ready(function( $ ) {
 		if(hash=="")
 		{
 			var hash=loremblogum_getParameterByName('hash');
-			if(hash==null||hash=="") hash="#tabs-1"; else hash="#"+hash;
+			if(hash==null||hash=="") hash="#loremblogum-tab-1"; else hash="#"+hash;
 		}
 		switch_tab($,hash);
 
-		$("#tabs ul a").on("click",function(e) {
+		$("#loremblogum-tabs ul a").on("click",function(e) {
 			e.preventDefault();
 			var href = $(this).attr("href");
+
 			switch_tab($,href);
 		});
 
@@ -60,18 +63,19 @@ function switch_tab($,hash)
 		hash = hash.substr(i+1);
 	}
 
-	console.log("switch_tab "+hash);
+	var tab = hash.replace(/\D/g,'');
+	console.log("switch_tab "+tab);
 
-	window.history.pushState('hash', hash, '?page=loremblogum-settings&hash='+hash+'#'+hash+'');
+	window.history.pushState('hash', hash, '?page=loremblogum-settings#loremblogum-tab-'+tab);
 
-	var LOREMBLOGUM_TAB_COUNT=8;
-	for(var i=1;i<=LOREMBLOGUM_TAB_COUNT;i++)
+	var len= $("#loremblogum-tabs ul a").length;
+	for(var i=1;i<=len;i++)
 	{
-		$("#tabs-"+i).hide();
+		$("#loremblogum-tab-"+i).hide();
 	}
-	$("#"+hash).show();
-	if(hash=="tabs-1") loremblogum_renderFeeds($);
-	if(hash=="tabs-2") renderPredefines($);
+	$("#loremblogum-tab-"+tab).show();
+	if(tab=="1") loremblogum_renderFeeds($);
+	if(tab=="2") renderPredefines($);
 }
 
 /* handles the rotating "loading" graphic that shows up when we're waiting on data... */

@@ -115,18 +115,18 @@ function loremblogum_settings_page()
 		}
 		?>
 
-		<div id="tabs">
+		<div id="loremblogum-tabs">
 			<ul>
-				<li><a href="#tabs-1">Feeds</a></li>
-				<li><a href="#tabs-2">Pre-defines</a></li>
-				<li><a href="#tabs-3">Settings</a></li>
-				<li><a href="#tabs-4">Posts</a></li>
-				<li><a href="#tabs-7">Backup</a></li>
-				<li><a href="#tabs-8">About</a></li>
+				<li><a href="#loremblogum-tab-1">Feeds</a></li>
+				<li><a href="#loremblogum-tab-2">Pre-defines</a></li>
+				<li><a href="#loremblogum-tab-3">Settings</a></li>
+				<li><a href="#loremblogum-tab-4">Posts</a></li>
+				<li><a href="#loremblogum-tab-5">Backup</a></li>
+				<li><a href="#loremblogum-tab-6">About</a></li>
 			</ul>
 
 
-			<div id="tabs-1" style="display: none">
+			<div id="loremblogum-tab-1" style="display: none">
 
 				<h3 class="title">Feeds</h3>
 				<p>These are all the news feeds.</p>
@@ -149,7 +149,7 @@ function loremblogum_settings_page()
 			</div>
 
 
-			<div id="tabs-2" style="display: none">
+			<div id="loremblogum-tab-2" style="display: none">
 				<h3 class="title">Pre-defines</h3>
 				<p>These pre-defines specify what css elements to filter out of any article page retrieved and where title and article content can be found.</p>
 
@@ -174,7 +174,7 @@ function loremblogum_settings_page()
 
 
 
-			<div id="tabs-3" style="display: none">
+			<div id="loremblogum-tab-3" style="display: none">
 				<p></p>	
 
 				<h3 class="title">Settings</h3>
@@ -403,7 +403,7 @@ function loremblogum_settings_page()
 
 
 
-			<div id="tabs-4" style="display: none">
+			<div id="loremblogum-tab-4" style="display: none">
 				<h3 class="title">Posts</h3>
 
 				<p>
@@ -457,23 +457,8 @@ function loremblogum_settings_page()
 				</div>
 
 
-				<div id="tabs-5" style="display: none">
-					<h3 class="title">Shortcodes</h3>
-					<p>
-						There are currently no shortcodes.
-					</p>
-				</div>
 
-
-				<div id="tabs-6" style="display: none">
-					<h3 class="title">Widgets</h3>
-					<p>
-						There is currently no widget.
-					</p>
-				</div>
-
-
-				<div id="tabs-7" style="display: none">
+				<div id="loremblogum-tab-5" style="display: none">
 					<h3 class="title">Backup</h3>
 
 					<p>
@@ -591,7 +576,7 @@ function loremblogum_settings_page()
 
 
 
-				<div id="tabs-8" style="display: none">
+				<div id="loremblogum-tab-6" style="display: none">
 					<h3 class="title">About</h3>
 
 					<p>
