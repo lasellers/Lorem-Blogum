@@ -1,0 +1,68 @@
+/*
+
+@author: Lewis A. Sellers <lasellers@gmail.com>
+@date: 8/2015
+*/
+
+#tabs {
+	
+}
+#tabs ul {
+	border-color:#ddd;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+}
+#tabs li {
+	display: inline-block;
+	border-color:#ddd;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: .5em .5em 0 0;
+	padding:.5em;
+	margin: 0;
+	background-color: #fff;
+}
+#tabs li a {
+	text-decoration: none;
+	color: black;
+}
+#tabs li a:hover, #tabs li a:active {
+	color: gray;
+}
+#loading {
+    text-align: center;
+}
+ul.remove-posts {
+	border-width: 0px !important;	
+}
+ul.remove-posts li {
+	display: block !important;
+	border-width: 0px !important;
+	padding: 0em !important;
+	margin: auto !important;
+	border-radius: 0em !important;
+	line-height: 1.2em !important;
+}
+.close-container {
+	border-width: 1px;
+	border-color: #ddd;
+	border-style: solid;
+	border-radius: .5em;
+	padding: 1em;
+}
+.close {
+	
+}
+.edit-table  {
+
+}
+.edit-table input {
+width: 100%;
+}
+.edit-table textarea {
+width: 100%;
+}
+.clip {
+	max-width: 18em;
+	padding: .5em;
+}
